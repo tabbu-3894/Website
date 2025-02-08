@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>IT Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700 & amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <script src="script.js"></script>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a class="flex items-center py-4 px-2" href="#">
+                            <img alt="Company logo with a stylized IT icon" class="h-8 w-8 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/49r6d-Jqx7lLm3pBfsf7Cr-v7vLjYfc0CEY5_Vb6vPI.jpg" width="50"/>
+                            <span class="font-semibold text-gray-500 text-lg">IT Company</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold" href="#">Home</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#about">About Us</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#services">Services</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#portfolio">Portfolio</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300" href="">Log In</a>
+                    <a class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300" href="">Sign Up</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+        <ul class="">
+            <li class="active"><a class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold" href="#">Home</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#about">About Us</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#services">Services</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#portfolio">Portfolio</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    <!-- Hero Section -->
+    <div class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800">Welcome to IT Company</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600">We provide the best IT solutions for your business</p>
+            <div class="mt-8">
+                <a class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-400 transition duration-300" href="#">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section -->
+    <div class="bg-gray-100 py-16" id="about">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800">About Us</h2>
+            <div class="mt-8 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img alt="Team of IT professionals working together in an office" class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/G7EYsrSmHuwp5EN2oOhQiWbrHAsej5-wft8gvAqQK44.jpg" width="500"/>
+                </div>
+                <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
+                    <p class="text-gray-600">We are a team of experienced IT professionals dedicated to providing top-notch solutions for your business. Our mission is to help you achieve your business goals through innovative technology solutions.</p>
+                    <p class="mt-4 text-gray-600">With years of experience in the industry, we have the expertise to handle projects of any size and complexity. We pride ourselves on delivering high-quality services that exceed our clients' expectations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div class="bg-white py-16" id="services">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Our Services</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="Icon representing web development services" class="h-16 w-16 mx-auto"height="100" src="https://storage.googleapis.com/a1aa/image/GRgQvSHAFDivFNpXx7d1zLNTOCJ8wu8sFzBAg-gBvdw.jpg" width="100"/>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">Web Development</h3>
+                    <p class="mt-2 text-gray-600 text-center">We build responsive and scalable web applications.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="Icon representing mobile app development services" class="h-16 w-16 mx-auto"height="100"  src="https://storage.googleapis.com/a1aa/image/pyAIaibm6toitbHkCiZmce2AgfbDhdYXpAnVTW-Ufdc.jpg" width="100"/>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">Mobile App Development</h3>
+                    <p class="mt-2 text-gray-600 text-center">Creating user-friendly mobile applications for all platforms.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="Icon representing Cloud Services" class="h-16 w-16 mx-auto" height"100" src="https://storage.googleapis.com/a1aa/image/9ewopvRyuv4AzmJH7SeB7pIcY86MoLQlwi_z7IME75I.jpg" width="100"/>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">Cloud Services</h3>
+                    <p class="mt-2 text-gray-600 text-center">Offering scalable cloud solutions for your business needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div class="bg-gray-100 py-16" id="portfolio">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Our Portfolio</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img alt="Screenshot of a web development project" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/Hew9IyaNhnupL0darc7l7fWvd5Xk5al_4ULrhzQuMEw.jpg" width="500"/>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Project 1</h3>
+                    <p class="mt-2 text-gray-600">Description of the project goes here.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img alt="Screenshot of a mobile app development project" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/Vv9p-iXW3uzC4uWSxaOMUt4PDQj9WMJf9ACIu64tjWE.jpg" width="500"/>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Project 2</h3>
+                    <p class="mt-2 text-gray-600">Description of the project goes here.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img alt="Screenshot of a cloud services project" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/HYRnmV8KyCQhxtPvMz0FLOgSp9pnLiShcyO7UMIZ4TI.jpg" width="500"/>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Project 3</h3>
+                    <p class="mt-2 text-gray-600">Description of the project goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="bg-white py-16" id="contact">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Contact Us</h2>
+            <div class="mt-8 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img alt="Contact us illustration with a person holding a phone and email icons" class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/l3bMON85pJtlS4j4JmXbv-cuLnPh0OOGDR4CXaFL5J4.jpg" width="500"/>
+                </div>
+                <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
+                    <form action="#" class="space-y-4" method="POST">
+                        <div>
+                            <label class="block text-gray-600" for="name">Name</label>
+                            <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" id="name" name="name" type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-gray-600" for="email">Email</label>
+                            <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" id="email" name="email" type="email"/>
+                        </div>
+                        <div>
+                            <label class="block text-gray-600" for="message">Message</label>
+                            <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <div>
+                            <button class="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-400 transition duration-300" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a class="flex items-center py-4 px-2" href="#">
+                        <img alt="Company logo with a stylized IT icon" class="h-8 w-8 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/49r6d-Jqx7lLm3pBfsf7Cr-v7vLjYfc0CEY5_Vb6vPI.jpg" width="50"/>
+                        <span class="font-semibold text-gray-500 text-lg">IT Company</span>
+                    </a>
+                </div>
+                <div class="flex space-x-4">
+                    <a class="text-gray-500 hover:text-green-500 transition duration-300" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-gray-500 hover:text-green-500 transition duration-300" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="text-gray-500 hover:text-green-500 transition duration-300" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-gray-500 hover:text-green-500 transition duration-300" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500">© 2023 IT Company. All rights reserved.</div>
+        </div>
+    </footer>
+    <!-- Chatbot -->
+<div class="chatbot">
+    <div class="chatbot-header">
+        <span>Chatbot</span>
+        <button class="chatbot-close">×</button>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-input">
+        <input placeholder="Type a message..." type="text"/>
+        <button>Send</button>
+    </div>
+</div>
+<button class="chatbot-toggle">
+    <i class="fas fa-comments"></i>
+</button>
+</body>
+</html>
